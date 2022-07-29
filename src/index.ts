@@ -1,12 +1,13 @@
-import express from 'express'
+import express, { request } from 'express';
 
-const app = express()
+const app = express();
 
-app.get('', (req,res) => {
-  res.send('Hello Word!')
-})
-const port = 3333
+app.get('', (req, res) => {
+  res.send('Hello Word!');
+});
 
-app.listen(port,() => {
-  console.log(`Server is runner on port ${port}`)
-})
+const port = 3333;
+
+app.listen(port, () => {
+  console.log(`Server is runner on port ${port}`);
+});
